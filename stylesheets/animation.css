@@ -426,15 +426,15 @@
   0% {
     transform: rotate(0deg) translateY(0);
   }
-  /* Сначала основной поворот */
+
   30% {
     transform: rotate(-100deg) translateY(-20vw);
   }
-  /* Завершаем поворот и начинаем движение */
+
   50% {
     transform: rotate(-100deg) translateY(-50vw);
   }
-  /* Основное движение */
+
   100% {
     transform: rotate(-100deg) translateY(-100vw);
   }
@@ -443,15 +443,15 @@
   0% {
     transform: rotate(0deg) translateY(0);
   }
-  /* Сначала основной поворот */
+
   30% {
     transform: rotate(-60deg) translateY(-20vw);
   }
-  /* Завершаем поворот и начинаем движение */
+
   50% {
     transform: rotate(-60deg) translateY(-50vw);
   }
-  /* Основное движение */
+
   100% {
     transform: rotate(-60deg) translateY(-100vw);
   }
@@ -460,15 +460,14 @@
   0% {
     transform: translateY(0);
   }
-  /* Сначала основной поворот */
   30% {
     transform: translateY(-10vw);
   }
-  /* Завершаем поворот и начинаем движение */
+
   50% {
     transform: translateY(-30vw);
   }
-  /* Основное движение */
+
   100% {
     transform: translateY(-100vw);
   }
@@ -477,15 +476,15 @@
   0% {
     transform: rotate(0deg) translateX(0);
   }
-  /* Сначала основной поворот */
+
   30% {
     transform: rotate(-30deg) translateX(20vw);
   }
-  /* Завершаем поворот и начинаем движение */
+
   50% {
     transform: rotate(-30deg) translateX(40vw);
   }
-  /* Основное движение */
+
   100% {
     transform: rotate(-30deg) translateX(60vw);
   }
