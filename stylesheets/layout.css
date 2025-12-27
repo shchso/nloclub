@@ -2,14 +2,15 @@
   box-sizing: border-box;
 }
 body {
-  width: 1440px;
+  /* width: 1440px; */
   display: block; /*как элемент реагирует на разные отступы */
   margin: 0 auto; /*выравнивание по центру/*/
   font-family: "Jrk";
   white-space: nowrap;
-  /* background-image: url(../images/back3.png);
+  background-image: url(../images/back01.png);
   background-repeat: no-repeat;
-  background-position: 3.4vw 8.5vw; */
+  background-size: contain;
+  background-position: 0 8.4vw;
 }
 
 .first {
@@ -17,6 +18,10 @@ body {
   flex-direction: row;
   overflow: hidden;
   position: relative;
+}
+.run1 {
+  width: 89vw;
+  height: 100%;
 }
 .run {
   background-color: #f55579;
@@ -35,6 +40,8 @@ body {
 }
 .logo img {
   padding: 1.5vw 0.8vw;
+  width: 11vw;
+  height: 8.5vw;
 }
 .run p {
   font-size: 8.8vw;
@@ -52,79 +59,138 @@ body {
   display: flex;
   overflow: hidden;
   z-index: 1;
-  background-image: url(../images/star2.png);
+  /* background-image: url(../images/star2.png);
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
   flex-direction: column;
-  gap: 30%;
+  gap: 27%;
 }
 .bot1 {
+  width: 100%;
   display: flex;
   flex-direction: row;
   gap: 60%;
+  justify-content: center;
+}
+.bot1 img:nth-of-type(1) {
+  width: 15.2vw;
+  height: 28vw;
+  /* padding-top: 4vw;
+  padding-left: 0vw; */
+  animation: spin 6s infinite linear;
+  transform-origin: center;
+}
+.bot1 img:nth-of-type(2) {
+  width: 8.5vw;
+  height: 28.6vw;
+  /* padding-top: 1.3vw;
+  padding-right: 0vw; */
+  animation: spin1 6s infinite linear;
+  transform-origin: center;
 }
 .bot2 {
   display: flex;
   flex-direction: row;
-  gap: 54%;
+  justify-content: center;
+  gap: 52%;
+  padding-left: 5vw;
 }
-.glassl {
-  padding: 5.7vw 0 0 8.7vw;
-  animation: spin 6s infinite linear;
-}
-.bottle2 {
-  padding: 1.3vw 0 0 0;
+.bot2 img:nth-of-type(1) {
+  /* padding-left: 8vw; */
+  width: 13vw;
+  height: 20.5vw;
   animation: spin1 6s infinite linear;
+  transform-origin: center;
 }
-.bottle1 {
-  padding-left: 8vw;
-  animation: spin1 6s infinite linear;
-}
-.glassr {
-  padding-right: 4vw;
-  padding-top: 6vw;
+.bot2 img:nth-of-type(2) {
+  /* padding-right: 4vw; */
+  /* padding-top: 6vw; */
+  width: 25vw;
+  height: 13.4vw;
+
   animation: spin 6s infinite linear;
+  transform-origin: center;
 }
 .overflow {
   position: absolute;
   z-index: 2;
   background-image: url(../images/herbody.png);
-  background-size: contain;
-  background-position: 0 0 10vw;
+  background-size: 94.5vw 73.3vw;
+  background-position: 4vw 0;
   background-repeat: no-repeat;
   width: 100%;
   height: 70.2vw;
 }
-.overflow div {
+.overflow img {
+  width: 44vw;
+  height: 27vw;
   position: absolute;
-  top: 17vw;
-  left: 26vw;
+  top: 19vw;
+  left: 32vw;
   animation: scale 1s infinite linear;
 }
+.overflow2 {
+  width: 39.86vw;
+  height: 47.57vw;
+  margin-top: 48vw;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+}
+.overflow2:hover {
+  opacity: 1;
+}
+.overflow2 img {
+  width: 39.86vw;
+  height: 47.57vw;
+  /* margin-top: 1vw;
+  margin-left: 1vw; */
+}
 .third {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
   height: 97vw;
   width: 100%;
   overflow: hidden;
   justify-content: center;
+  position: relative;
 }
+/* .left1 {
+  height: 100%;
+  width: 41.65vw;
+} */
 .left {
-  width: 44vw;
-  height: 97vw;
+  width: 41.65vw;
+  height: 90.485vw;
+  z-index: 1;
   background-image: url(../images/backs.png);
-
   background-repeat: no-repeat;
-  background-size: 347.9vw 824.83vw;
+  background-size: 2832.2vw 90.485vw;
   animation: play 3s steps(1) infinite;
 }
 
 .left img {
-  padding-top: 42vw;
-  padding-left: 1vw;
-  animation: reflect 0.5s infinite linear;
+  width: 39.86vw;
+  height: 47.57vw;
+  margin-top: 46vw;
+  margin-left: 0.7vw;
+  animation: reflect 0.9s infinite linear;
+  animation-play-state: running;
 }
+.left img:hover {
+  animation-play-state: paused;
+}
+
+/* .left2 {
+  width: ;
+  height: ;
+  background-image: url(../images/dancing.png);
+  background-repeat: no-repeat;
+  background-size: 79.72vw 47.57vw;
+  animation: play4 1s infinite linear; */
+
 .right {
-  width: 56vw;
+  width: 58.35vw;
   display: flex;
   flex-direction: column;
 }
@@ -133,25 +199,46 @@ body {
   height: 45vw;
 }
 .dj {
-  width: 27vw;
+  width: 28.35vw;
   background-color: #f55579;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .text {
-  width: 29vw;
+  width: 30vw;
   background-color: #b1bbff;
   display: flex;
   flex-direction: column;
-  gap: 10%;
-  padding-top: 2vw;
+  gap: 9%;
+  padding-top: 2.5vw;
   padding-left: 1vw;
+}
+.text p {
+  font-size: 13vw;
+  line-height: 7vw;
+  letter-spacing: -1%;
+  gap: 4%;
+}
+.text p:nth-of-type(1),
+.text p:nth-of-type(3) {
+  animation: color 0.3s infinite linear;
+}
+.text p:nth-of-type(2),
+.text p:nth-of-type(4) {
+  animation: colorr 0.3s infinite linear;
 }
 
 .disk img {
-  padding: 1.7vw 1.7vw 0 1.7vw;
-  /* animation: spin 1s infinite linear; */
+  height: 24.3vw;
+  width: 24.3vw;
+  margin: 1.7vw 1.7vw 0 1.7vw;
+  animation: spin 1s infinite linear;
+  animation-play-state: running;
+  transform-origin: center;
+}
+.disk img:hover {
+  animation-play-state: paused;
 }
 .buttons {
   width: 100%;
@@ -163,13 +250,14 @@ body {
 .moving {
   height: 100%;
   width: 50%;
-  margin: 2vw 0 2vw 3vw;
+  margin: 1vw 0 2vw 3vw;
   display: flex;
   flex-direction: column;
-  gap: 6%;
+  gap: 8%;
   background-image: url(../images/paths.png);
   background-repeat: no-repeat;
-  background-position: 0 0.8vw;
+  background-size: 8.9vw 15.2vw;
+  background-position: 0 1vw;
   /* background-size: contain; */
 }
 .buttons1 {
@@ -177,18 +265,49 @@ body {
   width: 2vw;
   border-radius: 0.2vw;
   background-color: #c1f03f;
+  /* animation: moving 1s infinite linear; */
+}
+.buttons1:nth-of-type(1) {
+  animation: moving 1s infinite linear;
+}
+.buttons1:nth-of-type(2) {
+  margin-left: 3vw;
+  margin-top: 0.1vw;
+  animation: moving2 1s infinite linear;
+  animation-delay: 0.1s;
+}
+.buttons1:nth-of-type(3) {
+  margin-left: 1vw;
+  margin-top: 0.2vw;
+  animation: moving 1s infinite linear;
+  animation-delay: 0.2s;
+}
+.buttons1:nth-of-type(4) {
+  margin-left: 4vw;
+  margin-top: 0.3vw;
+  animation: moving2 1s infinite linear;
+  animation-delay: 0.3s;
+}
+.buttons1:hover {
+  animation-play-state: paused;
 }
 .buttons2 {
-  height: 2.3vw;
-  width: 2.3vw;
+  height: 2.4vw;
+  width: 2.4vw;
   border-radius: 0.5vw;
   background-color: #c1f03f;
+}
+.buttons2:hover {
+  background-color: #ff8cf2;
 }
 .buttons3 {
   height: 8vw;
-  width: 3.7vw;
+  width: 3.9vw;
   border-radius: 0.5vw;
   background-color: #c1f03f;
+}
+.buttons3:hover {
+  background-color: #ff8cf2;
 }
 .static {
   height: 100%;
@@ -196,7 +315,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4%;
-  margin-top: 3vw;
+  margin-top: 2.5vw;
   margin-right: 1vw;
 }
 .row1 {
@@ -209,13 +328,7 @@ body {
   flex-direction: row;
   gap: 7%;
 }
-.text p {
-  font-size: 13vw;
-  line-height: 7vw;
-  letter-spacing: -1%;
-  gap: 4%;
-  animation: color 1s infinite alternate;
-}
+
 .bottom {
   height: 52vw;
   display: flex;
@@ -223,33 +336,56 @@ body {
   width: 100%;
 }
 .woman1 {
-  width: 26vw;
+  width: 23.26vw;
   height: 100%;
   background-image: url(../images/backs2.png);
-  background-position: 0 0 4vw 1vw;
-  background-size: 231.6vw 47.21vw;
+  /* background-position: 0 0 4vw 1vw; */
+  background-size: 209.375vw 47.21vw;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   animation: play2 0.5s steps(1) infinite;
+  animation-play-state: paused;
 }
-.zvezda1 {
-  padding-left: 11vw;
-  padding-top: 4vw;
+.woman1:hover {
+  animation-play-state: running;
+}
+.woman1 img:nth-of-type(1) {
+  width: 13.38vw;
+  height: 15.68vw;
+  margin-top: 11vw;
+  margin-left: 13vw;
+  /* padding-left: 11vw;
+  padding-top: 7vw; */
   animation: scale 0.5s infinite linear;
 }
-.zvezda2 {
-  padding-left: 1vw;
-  padding-top: 13vw;
-  animation: spin 1s infinite linear;
+.woman1 img:nth-of-type(2) {
+  width: 12.38vw;
+  height: 14.68vw;
+  margin-left: 1vw;
+  margin-top: 14vw;
+  animation: scale 0.5s infinite linear;
 }
 .woman2 {
-  width: 33vw;
+  width: 35.09vw;
   height: 100%;
   background-image: url(../images/bokal2.png);
+  background-size: 30vw 35.9vw;
   background-position: 1vw 2vw;
   background-repeat: no-repeat;
   display: flex;
+}
+.woman2 img {
+  width: 26.6vw;
+  height: 28.5vw;
+  margin-top: 12vw;
+  margin-left: 9vw;
+  animation: jump 0.8s infinite linear;
+  animation-play-state: running;
+}
+
+.woman2 img:hover {
+  animation-play-state: paused;
 }
 .four {
   background-color: #ff8cf2;
@@ -270,5 +406,140 @@ body {
   width: 100%;
 }
 .run2 p:hover {
+  animation-play-state: paused;
+}
+.five {
+  height: 44.3vw;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  z-index: 1;
+  flex-direction: row;
+  background-color: #b1bbff;
+}
+.cam {
+  width: 45.9vw;
+  height: 44.3vw;
+  background-image: url(../images/cam.png);
+  background-size: 367.2vw 44.3vw;
+  animation: cam 1.5s steps(1) infinite;
+  animation-play-state: running;
+}
+.cam:hover {
+  animation-play-state: paused;
+}
+.cam img {
+  width: 45.9vw;
+  height: 44.3vw;
+  opacity: 0;
+}
+.cam img:hover {
+  opacity: 1;
+}
+.rave {
+  height: 44.3vw;
+  width: 54.1vw;
+  background-image: url(../images/muhas.png);
+  background-size: 270.5vw 44.3vw;
+  animation: muhas 0.6s steps(1) infinite;
+}
+.six {
+  width: 100%;
+  height: 30.5vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #c1f03f;
+  position: relative;
+  overflow: hidden;
+}
+.slay p {
+  font-size: 19vw;
+  width: 100%;
+  padding-left: 50vw;
+  padding-top: 2vw;
+  opacity: 0;
+}
+
+.slay p:hover {
+  opacity: 1;
+}
+.name {
+  display: flex;
+  flex-direction: row;
+  gap: 52%;
+}
+.name p {
+  font-size: 8.8vw;
+  width: 100%;
+  padding-left: 1.25vw;
+}
+#purple {
+  width: 9.2vw;
+  height: 14.1vw;
+  position: absolute;
+}
+#green {
+  width: 9.65vw;
+  height: 13.8vw;
+  position: absolute;
+}
+.six img:nth-of-type(1) {
+  left: 5vw;
+  top: 15vw;
+  animation: bugs 6s infinite linear;
+  transform-origin: center;
+  animation-play-state: running;
+}
+.six img:nth-of-type(2) {
+  left: 15vw;
+  top: 2vw;
+  animation: bugs2 6s infinite linear;
+  animation-delay: 0.7s;
+  transform-origin: center;
+  animation-play-state: running;
+}
+.six img:nth-of-type(3) {
+  left: 27vw;
+  top: 12vw;
+  animation: bugs4 4s infinite linear;
+  animation-play-state: running;
+}
+.six img:nth-of-type(4) {
+  left: 44vw;
+  top: 3vw;
+  animation: bugs2 5s infinite linear;
+  transform-origin: center;
+  animation-play-state: running;
+}
+.six img:nth-of-type(5) {
+  left: 51vw;
+  top: 18vw;
+  animation: bugs1 4s infinite linear;
+  animation-play-state: running;
+}
+.six img:nth-of-type(6) {
+  left: 59vw;
+  top: 9vw;
+  animation: bugs3 4s infinite linear;
+  animation-delay: 0.3s;
+  transform-origin: center;
+  animation-play-state: running;
+}
+.six img:nth-of-type(7) {
+  left: 75vw;
+  top: 3vw;
+  animation: bugs 3s infinite linear;
+  transform-origin: center;
+  animation-play-state: running;
+}
+.six img:nth-of-type(8) {
+  left: 86vw;
+  top: 16vw;
+  animation: bugs1 4s infinite linear;
+  transform-origin: center;
+  animation-delay: 0.5s;
+  animation-play-state: running;
+}
+.six img:hover {
   animation-play-state: paused;
 }

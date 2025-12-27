@@ -23,6 +23,15 @@
   }
 }
 
+@keyframes color2 {
+  0% {
+    color: #c1f03f;
+  }
+  100% {
+    color: #ff8cf2;
+  }
+}
+
 @keyframes scale {
   0% {
     transform: scale(1);
@@ -41,284 +50,300 @@
   0% {
     transform: scaleX(1);
   }
-  100% {
+  50% {
     transform: scaleX(-1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes cam {
+  0% {
+    background-position: 0 0;
+  }
+  12.5% {
+    background-position: -45.9vw 0;
+  }
+  25% {
+    background-position: -91.8vw 0;
+  }
+  37.5% {
+    background-position: -137.7vw 0;
+  }
+  50% {
+    background-position: -183.6vw 0;
+  }
+  62.5% {
+    background-position: -229.5vw 0;
+  }
+  75% {
+    background-position: -275.4vw 0;
+  }
+  87.5% {
+    background-position: -321.3vw 0;
+  }
+  100% {
+    background-position: -367.2vw 0;
+  }
+}
+@keyframes muhas {
+  0% {
+    background-position: 0 0;
+  }
+  20% {
+    background-position: -54.1vw 0;
+  }
+  40% {
+    background-position: -108.2vw 0;
+  }
+  60% {
+    background-position: -162.3vw 0;
+  }
+  80% {
+    background-position: -216.4vw 0;
+  }
+  100% {
+    background-position: -270.5vw 0;
   }
 }
 @keyframes play {
   0% {
     background-position: 0 0;
   }
-
   1.5% {
-    background-position: -43.488vw 0;
+    background-position: -41.65vw 0;
   }
-
   3% {
-    background-position: -86.976vw 0;
+    background-position: -83.3vw 0;
   }
-
   4.5% {
-    background-position: -130.464vw 0;
+    background-position: -124.95vw 0;
   }
-
   6% {
-    background-position: -173.952vw 0;
+    background-position: -166.6vw 0;
   }
-
   7.5% {
-    background-position: -217.44vw 0;
+    background-position: -208.25vw 0;
   }
-
   9% {
-    background-position: -260.928vw 0;
+    background-position: -249.9vw 0;
   }
-
   10.5% {
-    background-position: -304.416vw 0;
+    background-position: -291.55vw 0;
   }
-  /* sec row */
   12% {
-    background-position: 0 -91.624vw;
+    background-position: -333.2vw 0;
   }
   13.5% {
-    background-position: -43.488vw -91.624vw;
+    background-position: -374.85vw 0;
   }
-
   15% {
-    background-position: -86.976vw -91.624vw;
+    background-position: -416.5vw 0;
   }
-
   16.5% {
-    background-position: -130.464vw -91.624vw;
+    background-position: -458.15vw 0;
   }
-
   18% {
-    background-position: -173.952vw -91.624vw;
+    background-position: -499.8vw 0;
   }
-
   19.5% {
-    background-position: -217.44vw -91.624vw;
+    background-position: -541.45vw 0;
   }
-
   21% {
-    background-position: -260.928vw -91.624vw;
+    background-position: -583.1vw 0;
   }
-
   22.5% {
-    background-position: -304.416vw -91.624vw;
+    background-position: -624.75vw 0;
   }
-  /* third row */
   24% {
-    background-position: 0 -183.248vw;
+    background-position: -666.4vw 0;
   }
-
   25.5% {
-    background-position: -43.488vw -183.248vw;
+    background-position: -708.05vw 0;
   }
-
   27% {
-    background-position: -86.976vw -183.248vw;
+    background-position: -749.7vw 0;
   }
-
   28.5% {
-    background-position: -130.464vw -183.248vw;
+    background-position: -791.35vw 0;
   }
-
   30% {
-    background-position: -173.952vw -183.248vw;
+    background-position: -833vw 0;
   }
-
   31.5% {
-    background-position: -217.44vw -183.248vw;
+    background-position: -874.65vw 0;
   }
-
   33% {
-    background-position: -260.928vw -183.248vw;
+    background-position: -916.3vw 0;
   }
-
   34.5% {
-    background-position: -304.416vw -183.248vw;
+    background-position: -957.95vw 0;
   }
-
   36% {
-    background-position: 0 -274.872vw;
+    background-position: -999.6vw 0;
   }
-
   37.5% {
-    background-position: -43.488vw -274.872vw;
+    background-position: -1041.25vw 0;
   }
-
   39% {
-    background-position: -86.976vw -274.872vw;
+    background-position: -1082.9vw 0;
   }
-
   40.5% {
-    background-position: -130.464vw -274.872vw;
+    background-position: -1124.55vw 0;
   }
-
   42% {
-    background-position: -173.952vw -274.872vw;
+    background-position: -1166.2vw 0;
   }
-
   43.5% {
-    background-position: -217.44vw -274.872vw;
+    background-position: -1207.85vw 0;
   }
-
   45% {
-    background-position: -260.928vw -274.872vw;
+    background-position: -1249.5vw 0;
   }
-
   46.5% {
-    background-position: -304.416vw -274.872vw;
+    background-position: -1291.15vw 0;
   }
-
   48% {
-    background-position: 0 -366.496vw;
+    background-position: -1332.8vw 0;
   }
-
   49.5% {
-    background-position: -43.488vw -366.496vw;
+    background-position: -1374.45vw 0;
   }
-
   51% {
-    background-position: -86.976vw -366.496vw;
+    background-position: -1416.1vw 0;
   }
-
   52.5% {
-    background-position: -130.464vw -366.496vw;
+    background-position: -1457.75vw 0;
   }
-
   54% {
-    background-position: -173.952vw -366.496vw;
+    background-position: -1499.4vw 0;
   }
-
   55.5% {
-    background-position: -217.44vw -366.496vw;
+    background-position: -1541.05vw 0;
   }
-
   57% {
-    background-position: -260.928vw -366.496vw;
+    background-position: -1582.7vw 0;
   }
-
   58.5% {
-    background-position: -304.416vw -366.496vw;
+    background-position: -1624.35vw 0;
   }
-
   60% {
-    background-position: 0 -458.12vw;
+    background-position: -1666vw 0;
   }
-
   61.5% {
-    background-position: -43.488vw -458.12vw;
+    background-position: -1707.65vw 0;
   }
-
   63% {
-    background-position: -86.976vw -458.12vw;
+    background-position: -1749.3vw 0;
   }
-
   64.5% {
-    background-position: -130.464vw -458.12vw;
+    background-position: -1790.95vw 0;
   }
-
   66% {
-    background-position: -173.952vw -458.12vw;
+    background-position: -1832.6vw 0;
   }
-
   67.5% {
-    background-position: -217.44vw -458.12vw;
+    background-position: -1874.25vw 0;
   }
-
   69% {
-    background-position: -260.928vw -458.12vw;
+    background-position: -1915.9vw 0;
   }
-
   70.5% {
-    background-position: -304.416vw -458.12vw;
+    background-position: -1957.55vw 0;
   }
-
   72% {
-    background-position: 0 -549.744vw;
+    background-position: -1999.2vw 0;
   }
-
   73.5% {
-    background-position: -43.488vw -549.744vw;
+    background-position: -2040.85vw 0;
   }
-
   75% {
-    background-position: -86.976vw -549.744vw;
+    background-position: -2082.5vw 0;
   }
-
   76.5% {
-    background-position: -130.464vw -549.744vw;
+    background-position: -2124.15vw 0;
   }
-
   78% {
-    background-position: -173.952vw -549.744vw;
+    background-position: -2165.8vw 0;
   }
-
   79.5% {
-    background-position: -217.44vw -549.744vw;
+    background-position: -2207.45vw 0;
   }
-
   81% {
-    background-position: -260.928vw -549.744vw;
+    background-position: -2249.1vw 0;
   }
-
   82.5% {
-    background-position: -304.416vw -549.744vw;
+    background-position: -2290.75vw 0;
   }
-
   84% {
-    background-position: 0 -641.368vw;
+    background-position: -2332.4vw 0;
   }
-
   85.5% {
-    background-position: -43.488vw -641.368vw;
+    background-position: -2374.05vw 0;
   }
-
   87% {
-    background-position: -86.976vw -641.368vw;
+    background-position: -2415.7vw 0;
   }
-
   88.5% {
-    background-position: -130.464vw -641.368vw;
+    background-position: -2457.35vw 0;
   }
-
   90% {
-    background-position: -173.952vw -641.368vw;
+    background-position: -2499vw 0;
   }
-
   91.5% {
-    background-position: -217.44vw -641.368vw;
+    background-position: -2540.65vw 0;
   }
-
   93% {
-    background-position: -260.928vw -641.368vw;
+    background-position: -2582.3vw 0;
   }
-
   94.5% {
-    background-position: -304.416vw -641.368vw;
+    background-position: -2623.95vw 0;
   }
-
   96% {
-    background-position: 0 -732.992vw;
+    background-position: -2665.6vw 0;
   }
-
   97.5% {
-    background-position: -43.488vw -732.992vw;
+    background-position: -2707.25vw 0;
   }
-
   99% {
-    background-position: -86.976vw -732.992vw;
+    background-position: -2748.9vw 0;
   }
-
   100.5% {
-    background-position: -130.464vw -732.992vw;
+    background-position: -2790.55vw 0;
   }
+  /* 102% {
+    background-position: -2832.2vw 0;
+  } */
+}
 
-  102% {
-    background-position: -173.952vw -732.992vw;
+@keyframes moving {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes moving2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-4vw);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 @keyframes color {
@@ -329,44 +354,154 @@
     opacity: 1;
   }
 }
+@keyframes colorr {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @keyframes play2 {
   0% {
     background-position: 0;
   }
 
   11% {
-    background-position: -25.73vw;
+    background-position: -23.26vw;
   }
 
   22% {
-    background-position: -51.46vw;
+    background-position: -46.52vw;
   }
 
   33% {
-    background-position: -77.19vw;
+    background-position: -69.78vw;
   }
 
   44% {
-    background-position: -102.92vw;
+    background-position: -93.04vw;
   }
 
   55% {
-    background-position: -128.65vw;
+    background-position: -116.3vw;
   }
 
   66% {
-    background-position: -154.38vw;
+    background-position: -139.56vw;
   }
 
   77% {
-    background-position: -180.11vw;
+    background-position: -162.82vw;
   }
 
   88% {
-    background-position: -205.84vw;
+    background-position: -186.08vw;
   }
 
   99% {
-    background-position: -231.57vw;
+    background-position: -209.34vw;
+  }
+}
+@keyframes play3 {
+}
+@keyframes bugs {
+  0% {
+    transform: rotate(0deg) translateY(0);
+  }
+  /* Сначала основной поворот */
+  30% {
+    transform: rotate(80deg) translateY(-20vw);
+  }
+  /* Завершаем поворот и начинаем движение */
+  50% {
+    transform: rotate(80deg) translateY(-50vw);
+  }
+  /* Основное движение */
+  100% {
+    transform: rotate(80deg) translateY(-100vw);
+  }
+}
+@keyframes bugs1 {
+  0% {
+    transform: rotate(0deg) translateY(0);
+  }
+  /* Сначала основной поворот */
+  30% {
+    transform: rotate(-100deg) translateY(-20vw);
+  }
+  /* Завершаем поворот и начинаем движение */
+  50% {
+    transform: rotate(-100deg) translateY(-50vw);
+  }
+  /* Основное движение */
+  100% {
+    transform: rotate(-100deg) translateY(-100vw);
+  }
+}
+@keyframes bugs2 {
+  0% {
+    transform: rotate(0deg) translateY(0);
+  }
+  /* Сначала основной поворот */
+  30% {
+    transform: rotate(-60deg) translateY(-20vw);
+  }
+  /* Завершаем поворот и начинаем движение */
+  50% {
+    transform: rotate(-60deg) translateY(-50vw);
+  }
+  /* Основное движение */
+  100% {
+    transform: rotate(-60deg) translateY(-100vw);
+  }
+}
+@keyframes bugs3 {
+  0% {
+    transform: translateY(0);
+  }
+  /* Сначала основной поворот */
+  30% {
+    transform: translateY(-10vw);
+  }
+  /* Завершаем поворот и начинаем движение */
+  50% {
+    transform: translateY(-30vw);
+  }
+  /* Основное движение */
+  100% {
+    transform: translateY(-100vw);
+  }
+}
+@keyframes bugs4 {
+  0% {
+    transform: rotate(0deg) translateX(0);
+  }
+  /* Сначала основной поворот */
+  30% {
+    transform: rotate(-30deg) translateX(20vw);
+  }
+  /* Завершаем поворот и начинаем движение */
+  50% {
+    transform: rotate(-30deg) translateX(40vw);
+  }
+  /* Основное движение */
+  100% {
+    transform: rotate(-30deg) translateX(60vw);
+  }
+}
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10vw);
+  }
+  60% {
+    transform: translateY(-4vw);
+  }
+  80% {
+    transform: translateY(0);
   }
 }
